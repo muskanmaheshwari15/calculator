@@ -8,11 +8,15 @@
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
   <!-- Custom CSS -->
   <style>
+    body{
+      background-color: #151617;
+    }
     .calculator {
-      max-width: 400px;
+      max-width: 19rem;
       margin: auto;
       margin-top: 20vh;
-      background-color: skyblue;
+      height: 30rem;
+      background-color: rgb(74, 76, 76);
       padding: 20px;
       border-radius: 5px;
 
@@ -28,7 +32,7 @@
 }
 
 
-    .calculator h2 {
+    .calculator h1 {
       text-align: center;
       margin-bottom: 20px;
     }
@@ -41,35 +45,36 @@
       border-radius: 5px;
     }
     .calculator button {
-      width: 20%;
+      width: 5rem;
       padding: 10px;
       font-size: 20px;
+      align-items: center;
       border: none;
       border-radius: 5px;
-      background-color: #151617;
+      background-color:black;
       color: #fff;
     }
     .calculator button:hover {
-      background-color: #0062cc;
+      background-color: #13508e;
     }
   </style>
 </head>
 <body>
   <div class="calculator">
-    <h2>Calculator</h2>
+    <h1>Calculator</h1>
     <input type="text" id="result" readonly>
     <button onclick="clearResult()">C</button>
     <button onclick="getResult('%')">%</button>
     <button onclick="getResult('*')">×</button>
     <button onclick="getResult('/')">/</button>
-    <button onclick="getResult('7')">7</button>
-    <button onclick="getResult('8')">8</button>
-    <button onclick="getResult('9')">9</button>
     <button onclick="getResult('-')">-</button>
-    <button onclick="getResult('4')">4</button>
-    <button onclick="getResult('5')">5</button>
-    <button onclick="getResult('6')">6</button>
     <button onclick="getResult('+')">+</button>
+    <button onclick="getResult('9')">9</button>
+    <button onclick="getResult('8')">8</button>
+    <button onclick="getResult('7')">7</button>
+    <button onclick="getResult('6')">6</button>
+    <button onclick="getResult('5')">5</button>
+    <button onclick="getResult('4')">4</button>
     <button onclick="getResult('1')">1</button>
     <button onclick="getResult('2')">2</button>
     <button onclick="getResult('3')">3</button>
